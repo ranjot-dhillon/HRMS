@@ -1,0 +1,145 @@
+@import "tailwindcss";
+:root {
+  --primary-violet: #6a1b9a;
+  --secondary-violet: #9c27b0;
+  --accent-lavender: #e1bee7;
+  --dark-bg: #2c3e50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--accent-lavender) 0%, #ffffff 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.login-container img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.login-container h4{
+    font-weight: bold;
+  color: var(--primary-violet);
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--accent-lavender);
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: var(--primary-violet);
+}
+
+.login-btn {
+  background: linear-gradient(135deg, var(--secondary-violet), var(--primary-violet));
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+}
+
+.forgot-password {
+  margin-top: 15px;
+}
+
+.forgot-password a {
+  color: var(--primary-violet);
+  text-decoration: none;
+}
+
+.register-link {
+  margin-top: 20px;
+}
+
+.register-link a {
+  color: var(--secondary-violet);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* CAPTCHA Styles */
+.captcha-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.captcha-group .captcha-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-violet);
+  margin-bottom: 10px;
+  background-color: var(--accent-lavender);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  letter-spacing: 5px;
+}
+
+.captcha-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--accent-lavender);
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s;
+  margin-top: 10px;
+}
+
+.captcha-group input:focus {
+  border-color: var(--primary-violet);
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
