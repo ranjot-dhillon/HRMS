@@ -19,11 +19,11 @@ function AdminDashboard() {
   return (
     <div className='flex-1'>
       <AdminSidebar />
-      {/* <div className='flex-1 ml-64 bg-gray-100 h-screen'> */}
+      <div className='flex-1 ml-64 bg-gray-100 h-screen'>
       <Navbar />
       {/* Main content can go here */}
       <AdminSummary/>
-      {/* </div> */}
+      </div>
     </div>
   );
 }
