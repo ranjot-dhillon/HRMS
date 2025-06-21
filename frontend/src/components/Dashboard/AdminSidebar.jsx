@@ -13,7 +13,7 @@ const Sidebar = () => {
   return (
     <div className="h-screen fixed top-0 left-0 w-72 bg-[#E1BEE7] shadow-lg">
       {/* Header */}
-      <div className="bg-[#6A1B9A] text-white py-6 px-6 text-2xl  font-bold text-center shadow-md tracking-wide uppercase">
+      <div className="bg-[#6A1B9A] text-white py-6 px-10 w-75 text-2xl mr-0 font-bold text-center shadow-md tracking-wide uppercase">
         Employee Management
       </div>
 

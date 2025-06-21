@@ -3,7 +3,7 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 18rem; /* Equivalent to left-72 in Tailwind */
+  left: 18.5rem; /* Equivalent to left-72 in Tailwind */
   right: 0;
   height: 4rem;
   background-color: #6A1B9A;
@@ -34,4 +34,11 @@
 
 .logout-button:hover {
   transform: translateY(-4px);
+}
+
+.ad{
+    margin-top: 1;
+    background-color: red;
+    padding-top: 3;
+
 }
