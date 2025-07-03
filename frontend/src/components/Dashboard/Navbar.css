@@ -3,13 +3,13 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 18.5rem; /* Equivalent to left-72 in Tailwind */
+  left: 18.75rem; /* Equivalent to left-72 in Tailwind */
   right: 0;
   height: 4rem;
   background-color: #6A1B9A;
   color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  z-index: 20;
+  z-index: 0;
   padding: 0 2rem;
   display: flex;
   align-items: center;

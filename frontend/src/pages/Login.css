@@ -7,27 +7,29 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
   font-family: "Arial", sans-serif;
 }
 
-body {
+/* body {
   background: linear-gradient(135deg, var(--accent-lavender) 0%, #ffffff 100%);
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+/* } */ 
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+    min-height: 100vh;       /* ✅ allows content to grow */
+  /* overflow-x: hidden; */
+/* } */ 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
