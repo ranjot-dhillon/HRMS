@@ -29,7 +29,7 @@ const Sidebar = () => {
           {
             label: "Employees",
             icon: <FaUsers />,
-            to: "/admin-dashboard/employees",
+            to: "/admin-dashboard/employee",
           },
           {
             label: "Departments",
@@ -44,7 +44,7 @@ const Sidebar = () => {
           {
             label: "Salary",
             icon: <FaMoneyBill />,
-            to: "/admin-dashboard/salary",
+            to: "/admin-dashboard/salary/add",
           },
           {
             label: "Settings",

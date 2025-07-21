@@ -30,7 +30,7 @@ export const DepartmentButtons = ({ _id, onDepartmentDelete }) => {
             },
           }
         );
-        console.log("Fetched departments:", response.data.department);
+        // console.log("Fetched departments:", response.data.department);
         if (response.data.success) {
           onDepartmentDelete(id);
         }
@@ -44,7 +44,7 @@ export const DepartmentButtons = ({ _id, onDepartmentDelete }) => {
       <button onClick={() => navigate(`/admin-dashboard/department/${_id}`)}>
         Edit
       </button>
-      <button onClick={() => handleDelete(_id)}>Delete</button>
+      <button onClick={() => handleDelete(_id)} >Delete</button>
     </div>
   );
 };

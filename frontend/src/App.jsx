@@ -14,6 +14,12 @@ import AddDepartment from "./components/Departments/AddDepartment.jsx";
 // import EditDepartment from './components/Departments/EditDepartment.jsx'
 // import EditDepartment from './components/Departments/EditDepartment.jsx'
 import EdDepartment from "./components/Departments/EdDepartment.jsx";
+import List from "./components/employee/List.jsx";
+import Add from "./components/employee/Add.jsx";
+import View from "./components/employee/View.jsx";
+import Edit from "./components/employee/Edit.jsx";
+import AddSalary from "./components/Salary/Add.jsx";
+import ViewSalary from "./components/Salary/ViewSalary.jsx";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -34,19 +40,23 @@ function App() {
         >
           <Route index element={<AdminSummary />}></Route>
           <Route path="departments" element={<Department />}></Route>
-          <Route path="add-department" element={<AddDepartment />}></Route>
           <Route path="department/:id" element={<EdDepartment />}></Route>
+          <Route path="add-department" element={<AddDepartment />}></Route>
           <Route
-            path="/admin-dashboard/employees"
-            element={<Department />}
+            path="employee"
+            element={<List />}
           ></Route>
+          <Route path="/admin-dashboard/add-employee" element={<Add />}></Route>
+          <Route path="/admin-dashboard/employee/:id" element={<View />}></Route>
+          <Route path="/admin-dashboard/employee/edit/:id" element={<Edit />}></Route>
+          <Route path="/admin-dashboard/employee/salary/:id" element={<ViewSalary />}></Route>
           <Route
             path="/admin-dashboard/leaves"
             element={<Department />}
           ></Route>
           <Route
-            path="/admin-dashboard/salary"
-            element={<Department />}
+            path="/admin-dashboard/salary/add"
+            element={<AddSalary />}
           ></Route>
           <Route
             path="/admin-dashboard/settings"

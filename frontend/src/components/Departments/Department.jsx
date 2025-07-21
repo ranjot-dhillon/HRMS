@@ -13,6 +13,7 @@ const Department = () => {
   const onDepartmentDelete = async (id) => {
     const data = department.filter((dep) => dep._id !== id);
     setdepartment(data);
+    setfilteredDepartment(data);
   };
 
   useEffect(() => {

@@ -80,7 +80,7 @@ const EdDepartment = () => {
                 type="text"
                 name="dep_name"
                 onChange={handleChange}
-                value={department.dep_name}
+                value={department.dep_name||''}
                 placeholder="Department Name "
                 className="mt-1  p-2 border border-gray-300 rounded-md"
               />

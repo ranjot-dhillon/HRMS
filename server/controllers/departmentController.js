@@ -62,7 +62,7 @@ export const deleteDepartment=async(req,res)=>{
   try{
   const {id}=req.params;
   
-  const deletedepartment=await Department.findByIdAndUpdate({_id:id},
+  const deletedepartment=await Department.findByIdAndDelete({_id:id},
  
   )
   return res.status(200).json({success:true,deletedepartment})
