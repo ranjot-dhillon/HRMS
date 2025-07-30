@@ -102,7 +102,7 @@ export const getEmployees= async (id)=>{
             </button>
             <button className='py-2 px-1 bg-green-600 text-black' onClick={() => navigate(`/admin-dashboard/employee/edit/${Id}`)} >Edit</button>
             <button className='py-2 px-1 bg-blue-600 text-black' onClick={() =>  navigate(`/admin-dashboard/employee/salary/${Id}`)} >Salary</button>
-            <button className='py-2 px-1 bg-red-600 text-black' onClick={() => handleDelete(_id)} >Leaves</button>
+            <button className='py-2 px-1 bg-red-600 text-black' onClick={() =>  navigate(`/admin-dashboard/employee/Leaves/${Id}`)} >Leaves</button>
           </div>
         );
       };

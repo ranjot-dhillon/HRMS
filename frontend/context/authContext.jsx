@@ -13,12 +13,15 @@ export const AuthContextProvider = ({children}) => {
         try {
         const token = localStorage.getItem('token');
         console.log("Verifying token:", token);
+        
+      
+
 
            if(token){
           const response=await axios.get('http://localhost:3000/api/auth/verify',{ headers:{
             "Authorization": `Bearer ${token}`
           }})
-          console.log(response)
+          console.log(response.data.user)
           if(response.data.success)
           {
             setUser(response.data.user)

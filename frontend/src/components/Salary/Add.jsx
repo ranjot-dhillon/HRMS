@@ -11,8 +11,7 @@ function AddSalary() {
     basicsalary:0,
     allowances:0,
     deductions:0,
-    paydate:null,
-
+    effectiveFrom:null,
   })
 
     const navigate=useNavigate()
@@ -117,8 +116,8 @@ console.log(salary)
             </div>
 
               <div>
-            <label className='block text-sm font-medium text-gray-700'>Pay Date</label>
-            <input type='date'name='payDate'placeholder='payDate'onChange={handlechange}className='mt-1 p-2 block w-full border border-gray-300 rounded-md'/>
+            <label className='block text-sm font-medium text-gray-700'>Effective From</label>
+            <input type='date'name='effectiveFrom'placeholder='Effective From'onChange={handlechange}className='mt-1 p-2 block w-full border border-gray-300 rounded-md'/>
             </div>
 
 

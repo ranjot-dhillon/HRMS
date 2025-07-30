@@ -7,10 +7,10 @@ const salarySchema = new Schema({
   allowances: { type: Number },
   deductions: { type: Number },
   netSalary: { type: Number },
-  payDate: { type: Date, required: true },
+  effectiveFrom: { type: Date, required: true },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
-});
+},{ timestamps: true });
 
 const Salary = mongoose.model('Salary', salarySchema);
 export default Salary;

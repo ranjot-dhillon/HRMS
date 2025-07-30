@@ -19,6 +19,7 @@ const ViewSalary = () => {
       if (response.data.success) {
         setSalaries(response.data.salary);
         setFilteredSalaries(response.data.salary);
+        console.log("filterred dalaryies",filteredSalaries)
       }
     } catch (error) {
       alert(error?.response?.data?.message || error.message);
@@ -37,6 +38,7 @@ const ViewSalary = () => {
       salary.employeeId?.toLowerCase().includes(q.toLowerCase())
     );
     setFilteredSalaries(filtered);
+    
   };
 
   return (
@@ -69,19 +71,19 @@ const ViewSalary = () => {
                 <th className="px-4 py-2">Allowances</th>
                 <th className="px-4 py-2">Deductions</th>
                 <th className="px-4 py-2">Net Salary</th>
-                <th className="px-4 py-2">Pay Date</th>
+                <th className="px-4 py-2">Effective From</th>
               </tr>
             </thead>
             <tbody>
               {filteredSalaries.map((salary, index) => (
                 <tr key={salary._id} className="even:bg-purple-50">
                   <td className="px-4 py-2">{index + 1}</td>
-                  <td className="px-4 py-2">{salary.employeeId?.name??"N/A"}</td>
+                  <td className="px-4 py-2">{salary.employeeId.employeeId}</td>
                   <td className="px-4 py-2">₹{salary.basicSalary??"N/A"}</td>
                   <td className="px-4 py-2">₹{salary.allowances || 0}</td>
                   <td className="px-4 py-2">₹{salary.deductions || 0}</td>
                   <td className="px-4 py-2 font-semibold text-green-700">₹{salary.netSalary}</td>
-                  <td className="px-4 py-2">{new Date(salary.payDate).toLocaleDateString()}</td>
+                  <td className="px-4 py-2">{salary.effectiveFrom ? new Date(salary.effectiveFrom).toLocaleDateString() : "N/A"}</td>
                 </tr>
               ))}
             </tbody>
