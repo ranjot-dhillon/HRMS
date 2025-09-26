@@ -33,7 +33,7 @@ app.use("/api/task", taskRoute);
 app.use("/api/notifications", notificationRoute);
 app.use("/api/admin",adminRoute);
 app.use("/api/policy",policyRoute);
-
-app.listen(process.env.PORT, () => {
+const PORT=process.env.PORT||3000;
+app.listen(PORT, () => {
   console.log(`server is running at ${process.env.PORT}`);
 });
