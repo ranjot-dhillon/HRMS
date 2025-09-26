@@ -4,7 +4,6 @@ import bcrypt from "bcrypt";
 import multer from "multer";
 import path from "path";
 import Department from "../models/Department.js";
-import { LuRotateCwSquare } from "react-icons/lu";
 import { useParams } from "react-router-dom";
 
 import { CloudinaryStorage } from "multer-storage-cloudinary";
