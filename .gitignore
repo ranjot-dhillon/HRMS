@@ -1,0 +1,22 @@
+# --- Node.js ---
+frontend/node_modules/
+server/node_modules/
+dist/
+build/
+
+# --- Python ---
+server/venv/
+Lib
+Scripts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Environment/config ---
+.env
+.env.local
+
+# --- Logs/temp ---
+*.log
+.DS_Store

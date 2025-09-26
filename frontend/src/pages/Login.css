@@ -1,0 +1,129 @@
+/* Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Login Card */
+.login-container form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+  backdrop-filter: blur(12px);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Headings */
+.login-container h4 {
+  color: #fff;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+/* Input Groups */
+.input-group,
+.captcha-group {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.input-group input,
+.captcha-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input::placeholder,
+.captcha-group input::placeholder {
+  color: #888;
+}
+
+/* Captcha */
+.captcha-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.captcha-text {
+  background: #222;
+  color: #0ff;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #5b0dbf, #1f66e2);
+}
+
+/* Links */
+.forgot-password,
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.forgot-password a,
+.register-link a {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.forgot-password a:hover,
+.register-link a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

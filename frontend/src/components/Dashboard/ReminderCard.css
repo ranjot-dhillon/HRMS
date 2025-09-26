@@ -1,0 +1,40 @@
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  flex: 1 1 250px;
+}
+
+.reminder-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.reminder-title span {
+  margin-left: 6px;
+}
+
+.reminder-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.reminder-input input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.reminder-input button {
+  background-color: #6A1B9A;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
